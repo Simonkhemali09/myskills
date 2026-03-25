@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simon Khemali | Full Stack Developer</title>
+  <meta name="description" content="Simon Khemali – Full Stack Developer & BCA Student. Building real-world applications with modern technologies." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header id="navbar">
+    <nav class="nav-container">
+      <a href="#hero" class="nav-logo">SK</a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero"       class="nav-link">Home</a></li>
+        <li><a href="#about"      class="nav-link">About</a></li>
+        <li><a href="#skills"     class="nav-link">Skills</a></li>
+        <li><a href="#projects"   class="nav-link">Projects</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact"    class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Theme toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="icon-sun">&#9728;</span>
+          <span class="icon-moon">&#9790;</span>
+        </button>
+
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section id="hero" class="hero-section">
+    <div class="hero-content fade-in">
+      <p class="hero-greeting">👋 Hello, I'm</p>
+      <h1 class="hero-name">Simon Khemali</h1>
+      <h2 class="hero-title">Full Stack Developer <span class="divider">|</span> BCA Student</h2>
+      <p class="hero-tagline">
+        I build real-world, production-ready applications — turning ideas into elegant,
+        scalable solutions one line of code at a time.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact"  class="btn btn-outline">Contact Me</a>
+        <a href="#"         class="btn btn-ghost" id="resumeBtn" download aria-label="Download Resume">⬇ Resume</a>
+      </div>
+      <div class="hero-socials">
+        <a href="mailto:simonkhemali09@gmail.com" target="_blank" rel="noopener" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </a>
+        <a href="https://github.com/Simonkhemali09" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.185 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.339-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.337 4.695-4.566 4.944.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.481C19.138 20.2 22 16.447 22 12.021 22 6.484 17.522 2 12 2z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/simon-khemali" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Decorative blob background -->
+    <div class="hero-blob blob-1" aria-hidden="true"></div>
+    <div class="hero-blob blob-2" aria-hidden="true"></div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <h2 class="section-title fade-in">About <span class="accent">Me</span></h2>
+      <div class="about-grid">
+        <!-- Avatar -->
+        <div class="about-avatar fade-in">
+          <div class="avatar-circle">SK</div>
+        </div>
+
+        <!-- Text -->
+        <div class="about-text fade-in">
+          <p>
+            Hi, I'm <strong>Simon Khemali</strong> — a passionate Full Stack Developer and
+            BCA student driven by curiosity and the love of building things. I thrive on
+            problem-solving and continuously learning new technologies to create impactful
+            software solutions.
+          </p>
+          <p>
+            From crafting clean UIs to designing robust backend APIs, I enjoy every layer of
+            the development stack. I believe great software is built through discipline,
+            creativity, and a deep understanding of user needs.
+          </p>
+
+          <!-- Education card -->
+          <div class="education-card">
+            <div class="edu-icon">🎓</div>
+            <div class="edu-details">
+              <h3>BBA-CA (Bachelor of Business Administration – Computer Applications)</h3>
+              <p class="edu-meta">CGPA: <strong>9.53</strong> &nbsp;|&nbsp; Current Student</p>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn-primary">Let's Connect</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <h2 class="section-title fade-in">My <span class="accent">Skills</span></h2>
+      <p class="section-sub fade-in">Technologies I work with to build great products</p>
+
+      <div class="skills-grid">
+        <!-- Programming Languages -->
+        <div class="skill-category fade-in">
+          <h3 class="category-title">💻 Programming</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">C</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">JavaScript</span>
+          </div>
+        </div>
+
+        <!-- Web Technologies -->
+        <div class="skill-category fade-in">
+          <h3 class="category-title">🌐 Web</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">AngularJS</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">REST APIs</span>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="skill-category fade-in">
+          <h3 class="category-title">🗄️ Database</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">MySQL</span>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-category fade-in">
+          <h3 class="category-title">🔧 Tools</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Postman</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <h2 class="section-title fade-in">My <span class="accent">Projects</span></h2>
+      <p class="section-sub fade-in">Things I've built that I'm proud of</p>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 — Venue Booking -->
+        <article class="project-card fade-in">
+          <div class="project-header">
+            <span class="project-badge">⭐ Featured</span>
+            <div class="project-links">
+              <a href="https://github.com/Simonkhemali09" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.185 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.339-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.337 4.695-4.566 4.944.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.481C19.138 20.2 22 16.447 22 12.021 22 6.484 17.522 2 12 2z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Venue Booking Management System</h3>
+          <p class="project-desc">
+            A full-stack venue booking platform featuring user authentication, real-time
+            availability checking, booking management, and an admin dashboard for venue
+            owners to track and manage all reservations.
+          </p>
+          <div class="project-tech">
+            <span>Node.js</span>
+            <span>MongoDB</span>
+            <span>JavaScript</span>
+            <span>HTML/CSS</span>
+            <span>REST API</span>
+          </div>
+        </article>
+
+        <!-- Project 2 — AI Headshot -->
+        <article class="project-card fade-in">
+          <div class="project-header">
+            <span class="project-badge badge-ai">🤖 AI</span>
+            <div class="project-links">
+              <a href="https://github.com/Simonkhemali09" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.185 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.339-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.337 4.695-4.566 4.944.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.481C19.138 20.2 22 16.447 22 12.021 22 6.484 17.522 2 12 2z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">AI Headshot &amp; Resume Maker</h3>
+          <p class="project-desc">
+            An AI-powered application that generates professional headshots and builds
+            polished resumes using machine learning models. Combines computer vision
+            with an Android front-end for a seamless mobile-first experience.
+          </p>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>ML / CV</span>
+            <span>Android</span>
+            <span>Java</span>
+            <span>REST API</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ACHIEVEMENTS ========== -->
+  <section id="achievements" class="section achievements-section">
+    <div class="container">
+      <h2 class="section-title fade-in">Achievements &amp; <span class="accent">Certifications</span></h2>
+
+      <div class="achievements-grid">
+
+        <div class="achievement-card fade-in">
+          <div class="achievement-icon">🏆</div>
+          <h3>Rank 1st — Academic Excellence</h3>
+          <p>Secured first rank in the department multiple consecutive years, maintaining a CGPA of 9.53.</p>
+        </div>
+
+        <div class="achievement-card fade-in">
+          <div class="achievement-icon">📜</div>
+          <h3>Full Stack Web Development</h3>
+          <p>Certified in full stack web development covering Node.js, MongoDB, REST APIs, and modern JavaScript.</p>
+        </div>
+
+        <div class="achievement-card fade-in">
+          <div class="achievement-icon">🐍</div>
+          <h3>Python Programming</h3>
+          <p>Completed an industry-recognized Python programming certification covering data structures, OOP, and scripting.</p>
+        </div>
+
+        <div class="achievement-card fade-in">
+          <div class="achievement-icon">☁️</div>
+          <h3>Cloud &amp; DevOps Fundamentals</h3>
+          <p>Earned certification in cloud computing fundamentals and DevOps practices including Git workflows and CI/CD basics.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <h2 class="section-title fade-in">Get In <span class="accent">Touch</span></h2>
+      <p class="section-sub fade-in">
+        I'm currently open to new opportunities. Whether you have a question, a project
+        idea, or just want to say hi — my inbox is always open!
+      </p>
+
+      <div class="contact-wrapper">
+        <!-- Contact Info Cards -->
+        <div class="contact-cards fade-in">
+
+          <a href="mailto:simonkhemali09@gmail.com" class="contact-card">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </div>
+            <div class="contact-card-body">
+              <h4>Email</h4>
+              <p>simonkhemali09@gmail.com</p>
+            </div>
+          </a>
+
+          <a href="tel:+918788389965" class="contact-card">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.24h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.27 6.27l1.14-1.14a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div class="contact-card-body">
+              <h4>Phone</h4>
+              <p>+91 8788389965</p>
+            </div>
+          </a>
+
+          <a href="https://github.com/Simonkhemali09" target="_blank" rel="noopener" class="contact-card">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.185 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.339-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.337 4.695-4.566 4.944.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.481C19.138 20.2 22 16.447 22 12.021 22 6.484 17.522 2 12 2z"/></svg>
+            </div>
+            <div class="contact-card-body">
+              <h4>GitHub</h4>
+              <p>Simonkhemali09</p>
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/simon-khemali" target="_blank" rel="noopener" class="contact-card">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+            </div>
+            <div class="contact-card-body">
+              <h4>LinkedIn</h4>
+              <p>simon-khemali</p>
+            </div>
+          </a>
+
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form fade-in" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Hi Simon, I'd like to discuss..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message ✉️</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">&copy; 2025 <strong>Simon Khemali</strong>. Crafted with ❤️ &amp; lots of ☕</p>
+      <div class="footer-socials">
+        <a href="mailto:simonkhemali09@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </a>
+        <a href="https://github.com/Simonkhemali09" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.185 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.339-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.337 4.695-4.566 4.944.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.481C19.138 20.2 22 16.447 22 12.021 22 6.484 17.522 2 12 2z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/simon-khemali" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back-to-top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">&#8679;</button>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
